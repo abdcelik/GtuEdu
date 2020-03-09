@@ -1,0 +1,5 @@
+CSE 101,Introduction to Computer Engineering,Z23,160,6.5;
+CSE 107,Introduction to Computer Engineering Lab,Proje & KuveytTürk Lab.,160,6.5;
+CSE 102,Computer Programming,Z23,160,6.5;
+CSE 108,Computer Programming Lab,Proje & KuveytTürk Lab.,160,6.5;
+CSE 241,Object Oriented Programming,Z23,160,6.5;
