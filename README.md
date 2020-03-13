@@ -6,7 +6,7 @@ This repository contains my all assignments and laboratory assignments at my Geb
 | [CSE 102](#CSE102) | Computer Programming |
 | [CSE 108](#CSE108) | Computer Programming Laboratory |
 | [CSE 241](#CSE241) | Object Oriented Programming |
-| [CSE 222](#CSE222) | Data Structure and Algorithms |
+| [CSE 222](#CSE222) | Data Structures and Algorithms |
 
 ## CSE102
 ### Purpose of the course
