@@ -29,4 +29,4 @@ This repository contains my all assignments and laboratory assignments at my Geb
 ### Purpose of the course
 &nbsp;&nbsp;&nbsp;&nbsp;To help students to know some basic data structures and algorithms which are to be used as tools in designing solutions to problems; and become familiar with the specification, usage, implementation and analysis of these data structures and algorithms.
 ### Courses
-- [2020_Fall](https://github.com/abdcelik/GTU/tree/master/CSE222)
+- [2020_Spring](https://github.com/abdcelik/GTU/tree/master/CSE222)
