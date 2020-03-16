@@ -7,6 +7,7 @@ This repository contains my all assignments and laboratory assignments at my Geb
 | [CSE 108](#CSE108) | Computer Programming Laboratory |
 | [CSE 241](#CSE241) | Object Oriented Programming |
 | [CSE 222](#CSE222) | Data Structures and Algorithms |
+| [CSE 232](#CSE232) | Logic Circuits And Design |
 
 ## CSE102
 ### Purpose of the course
@@ -31,3 +32,9 @@ This repository contains my all assignments and laboratory assignments at my Geb
 &nbsp;&nbsp;&nbsp;&nbsp;To help students to know some basic data structures and algorithms which are to be used as tools in designing solutions to problems; and become familiar with the specification, usage, implementation and analysis of these data structures and algorithms.
 ### Courses
 - [2020_Spring](https://github.com/abdcelik/GTU/tree/master/CSE222)
+
+## CSE232
+### Purpose of the course
+&nbsp;&nbsp;&nbsp;&nbsp;Students will be introduced the fundamentals underlying contemporary logic design using hardware description languages, synthesis, and verification. Class focuses on the everevolving applications of basic computer design concepts with strong connections to realworld technology.
+### Courses
+- [2020 Spring](https://github.com/abdcelik/GTU/tree/master/CSE232/2020_Spring)
