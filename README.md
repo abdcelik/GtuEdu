@@ -8,6 +8,7 @@ This repository contains my all assignments and laboratory assignments at my Geb
 | [CSE 241](#CSE241) | Object Oriented Programming |
 | [CSE 222](#CSE222) | Data Structures and Algorithms |
 | [CSE 232](#CSE232) | Logic Circuits And Design |
+| [CSE 234](#CSE234) | Logic Circuits And Design Lab |
 
 ## CSE102
 ### Purpose of the course
@@ -38,3 +39,7 @@ This repository contains my all assignments and laboratory assignments at my Geb
 &nbsp;&nbsp;&nbsp;&nbsp;Students will be introduced the fundamentals underlying contemporary logic design using hardware description languages, synthesis, and verification. Class focuses on the everevolving applications of basic computer design concepts with strong connections to realworld technology.
 ### Courses
 - [2020 Spring](https://github.com/abdcelik/GTU/tree/master/CSE232/2020_Spring)
+
+## CSE234
+### Courses
+- [2020 Spring](https://github.com/abdcelik/GTU/tree/master/CSE234)
