@@ -41,5 +41,7 @@ This repository contains my all assignments and laboratory assignments at my Geb
 - [2020 Spring](https://github.com/abdcelik/GTU/tree/master/CSE232/2020_Spring)
 
 ## CSE234
+### Purpose of the course
+&nbsp;&nbsp;&nbsp;&nbsp;The lab is provided to help students to understand the concepts studied in the lectures and also to give them hands on experience.
 ### Courses
 - [2020 Spring](https://github.com/abdcelik/GTU/tree/master/CSE234)
