@@ -1,0 +1,6 @@
+n
+(a,a)(a,b)(a,e)(b,b)(b,e)(c,c)(c,d)(d,d)(e,e)
+Reflexive: Yes, all elements are present.
+Symmetric: No, (a,b) is found whereas (b,a) is not found.
+Antisymmetric: Yes, (a,b) is found whereas (b,a) is not found.
+Transitive: Yes, (a,e) is found since (a,b) and (b,e) are found.
