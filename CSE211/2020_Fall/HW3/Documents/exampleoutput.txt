@@ -1,0 +1,5 @@
+n
+POSET: (a, a), (a, b), (a, e), (b, b), (b, e), (c, c), (c, d), (d, d), (e, e)
+a,b
+b,e
+c,d

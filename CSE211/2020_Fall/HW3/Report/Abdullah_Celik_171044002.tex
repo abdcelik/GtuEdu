@@ -1,0 +1,276 @@
+\documentclass[a4 paper]{article}
+\usepackage[inner=2.0cm,outer=2.0cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage[rgb]{xcolor}
+\usepackage{verbatim}
+\usepackage{subcaption}
+\usepackage{amsgen,amsmath,amstext,amsbsy,amsopn,tikz,amssymb}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true, urlcolor=blue,  linkcolor=blue, citecolor=blue]{hyperref}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{rotating}
+\usepackage{booktabs}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+
+\newcommand{\homework}[6]{
+   \pagestyle{myheadings}
+   \thispagestyle{plain}
+   \newpage
+   \setcounter{page}{1}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{\vspace{2mm}
+    \hbox to 6.28in { {\bf CSE 211:~Discrete Mathematics \hfill {\small (#2)}} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\Large \hfill #1  \hfill} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\it Instructor: {\rm #3} \hfill  {\rm #5} \hfill  {\rm #6}} \hfill}
+       \hbox to 6.28in { {\it Assistant: #4  \hfill #6}}
+      \vspace{2mm}}
+   }
+   \end{center}
+   \markboth{#5 -- #1}{#5 -- #1}
+   \vspace*{4mm}
+}
+
+\newcommand{\problem}[2]{~\\\fbox{\textbf{Problem #1}}\hfill (#2 points)\newline\newline}
+\newcommand{\subproblem}[1]{~\newline\textbf{(#1)}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\Hy}{\mathcal{H}}
+\newcommand{\VS}{\textrm{VS}}
+\newcommand{\solution}{~\newline\textbf{\textit{(Solution)}} }
+
+\newcommand{\bbF}{\mathbb{F}}
+\newcommand{\bbX}{\mathbb{X}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bepsilon}{\boldsymbol{\epsilon}}
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\0}{\mathbf{0}}
+
+
+\begin{document}
+\homework{Homework \#3}{Due: 04/01/21}{Dr. Zafeirakis Zafeirakopoulos}{Gizem S\"ung\"u}{}{}
+\textbf{Course Policy}: Read all the instructions below carefully before you start working on the assignment, and before you make a submission.
+\begin{itemize}
+\item It is not a group homework. Do not share your answers to anyone in any circumstance. Any cheating means at least -100 for both sides. 
+\item Do not take any information from Internet.
+\item No late homework will be accepted. 
+\item For any questions about the homework, send an email to gizemsungu@gtu.edu.tr
+\item The homeworks (both latex and pdf files in a zip file) will be
+submitted into the course page of Moodle.
+\item The latex, pdf and zip files of the homeworks should be saved as
+"Name\_Surname\_StudentId".$\{$tex, pdf, zip$\}$.
+\item If the answers of the homeworks have only calculations without any formula or any explanation -when needed- will get zero.
+\item Writing the homeworks on Latex is strongly suggested. However, hand-written paper is still accepted $\textbf{IFF}$ hand writing of the student is clear and understandable to read, and the paper is well-organized. Otherwise, the assistant cannot grade the student's homework.
+\end{itemize}
+
+\problem{1: Representing Graphs}{10}
+Represent the graph in Figure \ref{fig:graph1} with an adjacency matrix. Explain your representation clearly.
+\begin{figure*}[h]
+	\centering
+	\includegraphics[scale=0.5]{graph1.png}
+	\caption{The graph for Problem 1}
+	\label{fig:graph1}
+\end{figure*}
+\solution
+\begin{itemize}
+    \item Vertex: a, b, c, d, e
+    \item Edge: a$\rightarrow$b, a$\rightarrow$d, b$\rightarrow$a, b$\rightarrow$c, b$\rightarrow$d, b$\rightarrow$e, c$\rightarrow$b, c$\rightarrow$c, d$\rightarrow$a, d$\rightarrow$e, e$\rightarrow$c, e$\rightarrow$e
+    \item First, vertexes are written to the rows and columns in the table we will create.\newline
+    \begin{tabular}{l|lllll}
+      & a & b & c & d & e  \\
+    \hline
+    a &  &  &  &  &   \\
+    b &  &  &  &  &   \\
+    c &  &  &  &  &   \\
+    d &  &  &  &  &   \\
+    e &  &  &  &  &  
+    \end{tabular}
+    \item The number of edges for each (row, column) pair is written in the corresponding part.\newline
+    \begin{tabular}{l|lllll}
+      & a & b & c & d & e  \\ 
+    \hline
+    a & 0 & 1 & 0 & 1 & 0  \\
+    b & 1 & 0 & 1 & 1 & 1  \\
+    c & 0 & 1 & 1 & 0 & 0  \\
+    d & 1 & 0 & 0 & 0 & 1  \\
+    e & 0 & 0 & 1 & 0 & 1 
+    \end{tabular}
+    \item The resulting table is an adjacency matrix.\newline
+    $$\begin{bmatrix}
+    0 & 1 & 0 & 1 & 0 \\
+    1 & 0 & 1 & 1 & 1 \\
+    0 & 1 & 1 & 0 & 0 \\
+    1 & 0 & 0 & 0 & 1 \\
+    0 & 0 & 1 & 0 & 1 \\
+    \end{bmatrix}
+    \quad$$
+\end{itemize}
+
+\problem{2: Hamilton Circuits}{10+10+10=30}
+Determine whether there is a Hamilton circuit for each given graph (See Figure \ref{fig:G1a}, Figure \ref{fig:G1b}, Figure \ref{fig:G1c} ). If the graph has a Hamilton circuit, show the path with its vertices which gives a Hamilton circuit. If it does not, explain why no Hamilton circuit exists. \newline
+\begin{figure*}[h]
+	\centering
+	\begin{subfigure}[h]{0.5\textwidth}
+		\centering
+		\includegraphics[height=1.5in]{circuit-a.png}
+		\caption{The graph $G_1$}
+		\label{fig:G1a}
+	\end{subfigure}%
+	\begin{subfigure}[h]{0.5\textwidth}
+		\centering
+		\includegraphics[height=1.5in]{circuit-b.png}
+		\caption{The graph $G_2$}
+		\label{fig:G1b}
+	\end{subfigure}
+	\begin{subfigure}[h]{0.5\textwidth}
+		\centering
+		\includegraphics[height=1.2in]{circuit-c.png}
+		\caption{The graph $G_3$}
+		\label{fig:G1c}
+	\end{subfigure}
+	\caption{The graphs to find Hamilton circuits for Problem 1}
+\end{figure*}
+\solution
+\newline
+\textbf{Properties of Hamilton circuit}
+\begin{itemize}
+    \item Returns the starting point
+    \item Visits every vertex once and no repeats
+\end{itemize}
+\textbf{Dirac’s Theorem}- “If G is a simple graph with n vertices with n$\geq$ 3 such that the degree of every vertex in G is at least n/2, then G has a Hamiltonian circuit.”
+\newline
+\newline
+I will first apply the Dirac's Theorem for each graph.
+\newpage
+\subproblem{a} \solution\\
+    \begin{itemize}
+        \item Number of vertex= 17
+        \item Degree of vertex = 17/2 = 8,5
+        \item There are vertexes less than 8,5 degrees. Because it is lower grade vertex, we cannot call this circuit definite Hamilton circuit. Therefore, we will try to find the Hamilton circuit.
+        \item When I start with any external node (a, b, c, d, h, e, f, g), I can come back to where I started when I visit all the outside nodes. Otherwise, it is not possible for me to go back to where I started. I cannot visit an outside node in case I visit the nodes inside. If I visit all the outside nodes, I cannot visit the nodes inside.
+        \begin{figure}[h]
+            \centering
+            \begin{subfigure}[b]{0.4\textwidth}
+             \centering
+             \includegraphics[width=\textwidth]{q2-a1.png}
+             \caption{When start node a and visits all outside nodes}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}[b]{0.4\textwidth}
+             \centering
+             \includegraphics[width=\textwidth]{q2-a2.png}
+             \caption{When start node a and visits inside nodes}
+            \end{subfigure}
+        \end{figure}
+        \item When I start with any node (i, j, k, o, p, q, n, m, l) inside, when I need to visit the outside nodes, I still cannot visit an outside node.
+        \begin{figure}[h]
+        	\centering
+        	\includegraphics[scale=0.25]{q2-a3.png}
+        	\caption{When start node i and visits all outside nodes}
+        \end{figure}
+        \item Therefore, Hamilton circuit does not exist in this graph.
+    \end{itemize}
+    \newpage
+\subproblem{b} \solution\\
+    \begin{itemize}
+        \item Number of vertex= 7
+        \item Degree of vertex = 7/2 = 3,5
+        \item There are vertexes less than 3,5 degrees. Because it is lower grade vertex, we cannot call this circuit definite Hamilton circuit. Therefore, we will try to find the Hamilton circuit.
+        \item Since e, g and f vertex have one edge, I cannot go back after starting or visiting them. Because each vertex must be visited only once in the Hamilton circuit. For this reason, there is no Hamilton circuit in this graph.
+    \end{itemize}
+\subproblem{c} \solution\\
+    \begin{itemize}
+        \item Number of vertex= 9
+        \item Degree of vertex = 9/2 = 4,5
+        \item There are vertexes less than 4,5 degrees. Because it is lower grade vertex, we cannot call this circuit definite Hamilton circuit. Therefore, we will try to find the Hamilton circuit.
+        \item There are Hamilton circuit:
+        \begin{figure}[h]
+        	\centering
+        	\includegraphics[scale=0.5]{q2-c.png}
+        	\caption{The Hamilton circuit for Problem 2.c}
+        \end{figure}
+    \end{itemize}
+\problem{3: Applications on Graphs}{20}
+Schedule the final exams for Math 101, Math 243, CSE 333, CSE 346, CSE 101, CSE 102, CSE 273, and CSE 211, using the fewest number of different time slots, if there are no students who are taking:
+\begin{itemize}
+	\item both Math 101 and CS 211,
+	\item both Math 243 and CS 211,
+	\item both CSE 346 and CSE 101,
+	\item both CSE 346 and CSE 102,
+	\item both Math 101 and Math 243,
+	\item both Math 101 and CSE 333,
+	\item both CSE 333 and CSE 346
+\end{itemize}
+but there are students in every other pair of courses together for this semester.\\ 
+$\textbf{Note:}$ Assume that you have only one classroom.\\ \\
+$\textit{Hint 1: Solve the problem with respect to your problem session notes.}$\\
+$\textit{Hint 2: \hyperlink{https://www.draw.io/}{Check the website}}$
+\newline
+\solution
+\begin{itemize}
+    \item Firstly i created graph with given informations. Courses not taken at the same time are indicated by the absence of edge between the two vertexes in the graph.
+    \begin{figure}[h]
+    	\centering
+    	\includegraphics[scale=0.4]{q3-step1.png}
+    \end{figure}
+    \item If there is an edge between the two vertexes, this means that those two courses cannot be scheduled at the same time. I will use Graph coloring for this. By coloring the vertexes, which are edge between each other, differently, I will prevent the exams that can be taken together at the same time. The fact that the colors of the two vertexes are the same will mean that the exam hours of the two courses may be the same. Because these two courses cannot be taken at the same time, there will be no conflict.
+        \begin{figure}[h]
+        	\centering
+        	\includegraphics[scale=0.5]{q3-step2.png}
+        	\caption{The Hamilton circuit for Problem 2.c}
+        \end{figure}
+    \item Red, blue, yellow, green and purple colors represent different time intervals. We solved the exam schedule using 5 different time intervals.
+\end{itemize}
+\newpage
+\problem{4: Applications for Hasse Diagram of Relations}{40}
+Remember the Problem 3 in Homework 2. 
+\newline
+\newline
+Write an algorithm to draw Hasse diagram of the given relations in "input.txt" which is given for HW2.
+\newline
+\newline
+Your code should meet the following requirements, standards and accomplish the given tasks.
+\begin{itemize}
+	\item Read the relations from the text file "input.txt". You can use your code from HW2 if you implemented to read the file. If you didn't implement it, please check HW2 to learn how to read the relations from the file. 
+	\item Determine each relation in "input.txt" whether it is reflexive, symmetric, anti-symmetric and transitive with your algorithm from HW2.
+	\item In order to draw Hasse diagram, each relation must be POSET. Hence, the relation obeys the following rules:
+	
+	\begin{itemize}
+		\item Reflexivity
+		\item Anti-symmetric
+		\item Transitivity 
+	\end{itemize}
+	If the relation is not a POSET, your algorithm is responsible to CONVERT it to POSET. 
+	\begin{itemize}
+		\item If the relation is not reflexive, add new pairs to make the relation reflexive.
+		\item If the relation is symmetric, remove some pairs which make the relation symmetric. For instance, if the relation has (a, b) and (b, a), remove one of them randomly.
+		\item If the relation is not transitive, add new pairs which would make the relation transitive. 
+	\end{itemize}
+	\item After the relation becomes POSET, your algorithm should obtain Hasse diagram of the relation and write the diagram with the following format. 
+	\begin{itemize}
+		\item An example of the output format is given in "exampleoutput.txt". The file has the result of the first relation in "input.txt".
+		\item In "output.txt", each new Hasse diagram starts with "n".
+		\item The relation is (a, a), (a, b), (a, e), (b, b), (b, e), (c, c), (c, d), (d, d), (e, e)
+		\item The relation is already a POSET so we don't need to add or remove any pairs.
+		\item After "n", write the POSET in the next line as it is shown in "exampleoutput.txt".
+		\item Since the relation is POSET, it becomes (a, b), (b, e), (c, d) after removing reflexive and transitive pairs. 
+		\item The following lines give each pair of Hasse diagram.
+	\end{itemize}	
+	\item You can implement your algorithm in Python, Java, C or C++.
+	\item $\textbf{Important: }$ Put comments almost for each line of your code to describe what the line is going to do. 
+	\item You should put your source code file (file name is problem1.$\{.c, .java, .py, .cpp\}$) and output.txt into your homework zip file (check Course Policy).
+\end{itemize}
+\end{document} 
