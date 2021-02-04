@@ -1,0 +1,111 @@
+Archive Project report for 171044002
+Mon Jan 11 22:13:52 2021
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Mon Jan 11 22:13:52 2021 ;
+; Revision Name          ; 171044002                             ;
+; Top-level Entity Name  ; mips32                                ;
+; Family                 ; Cyclone III                           ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Custom' contains:
+    Info: Automatically detected source files
+    Info: Project source and settings files
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/Abdullah/Desktop/171044002/Celik_Abdullah_171044002.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report '171044002.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/altera/13.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4481 megabytes
+    Info: Processing ended: Mon Jan 11 22:13:52 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------------------+
+; Files Archived                                       ;
++------------------------------------------------------+
+; File Name                                            ;
++------------------------------------------------------+
+; 171044002.qpf                                        ;
+; 171044002.qsf                                        ;
+; C:/altera/13.1/quartus/bin64/assignment_defaults.qdf ;
+; c:/altera/13.1/quartus/bin64/assignment_defaults.qdf ;
+; Data_Memory.mem                                      ;
+; Data_Memory_after.mem                                ;
+; db/171044002.db_info                                 ;
+; incremental_db/compiled_partitions/171044002.db_info ;
+; Instruction_Memory.mem                               ;
+; Register_Memory.mem                                  ;
+; Register_Memory_after.mem                            ;
+; source/adder_2bit.v                                  ;
+; source/adder_4bit.v                                  ;
+; source/adder_8bit.v                                  ;
+; source/adder_16bit.v                                 ;
+; source/adder_32bit.v                                 ;
+; source/ALU_1bit.v                                    ;
+; source/ALU_1bit_MSB.v                                ;
+; source/ALU_32bit.v                                   ;
+; source/ALU_control.v                                 ;
+; source/comparator_32bit.v                            ;
+; source/Control.v                                     ;
+; source/Data_Memory.v                                 ;
+; source/full_adder.v                                  ;
+; source/half_adder.v                                  ;
+; source/Instruction_Memory.v                          ;
+; source/left_shifter_2bit.v                           ;
+; source/mips32.v                                      ;
+; source/mips32_testbench.v                            ;
+; source/mux_2x1_1bit.v                                ;
+; source/mux_2x1_2bit.v                                ;
+; source/mux_2x1_4bit.v                                ;
+; source/mux_2x1_5bit.v                                ;
+; source/mux_2x1_8bit.v                                ;
+; source/mux_2x1_16bit.v                               ;
+; source/mux_2x1_32bit.v                               ;
+; source/Registers.v                                   ;
+; source/sign_extender_16_to_32.v                      ;
+; source/zero_extender_16_to_32.v                      ;
++------------------------------------------------------+
+
+

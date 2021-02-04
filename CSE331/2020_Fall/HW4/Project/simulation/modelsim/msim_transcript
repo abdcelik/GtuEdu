@@ -1,0 +1,244 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do 171044002_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/mux_2x1_1bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_2x1_1bit
+# 
+# Top level modules:
+# 	mux_2x1_1bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/mux_2x1_2bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_2x1_2bit
+# 
+# Top level modules:
+# 	mux_2x1_2bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/mux_2x1_4bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_2x1_4bit
+# 
+# Top level modules:
+# 	mux_2x1_4bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/mux_2x1_5bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_2x1_5bit
+# 
+# Top level modules:
+# 	mux_2x1_5bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/mux_2x1_8bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_2x1_8bit
+# 
+# Top level modules:
+# 	mux_2x1_8bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/mux_2x1_16bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_2x1_16bit
+# 
+# Top level modules:
+# 	mux_2x1_16bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/mux_2x1_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_2x1_32bit
+# 
+# Top level modules:
+# 	mux_2x1_32bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/half_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	half_adder
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/full_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/adder_2bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_2bit
+# 
+# Top level modules:
+# 	adder_2bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/adder_4bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_4bit
+# 
+# Top level modules:
+# 	adder_4bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/adder_8bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_8bit
+# 
+# Top level modules:
+# 	adder_8bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/adder_16bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_16bit
+# 
+# Top level modules:
+# 	adder_16bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/adder_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_32bit
+# 
+# Top level modules:
+# 	adder_32bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/sign_extender_16_to_32.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sign_extender_16_to_32
+# 
+# Top level modules:
+# 	sign_extender_16_to_32
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/zero_extender_16_to_32.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module zero_extender_16_to_32
+# 
+# Top level modules:
+# 	zero_extender_16_to_32
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/left_shifter_2bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module left_shifter_2bit
+# 
+# Top level modules:
+# 	left_shifter_2bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/comparator_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_32bit
+# 
+# Top level modules:
+# 	comparator_32bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/ALU_1bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_1bit
+# 
+# Top level modules:
+# 	ALU_1bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/ALU_1bit_MSB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_1bit_MSB
+# 
+# Top level modules:
+# 	ALU_1bit_MSB
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/ALU_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_32bit
+# 
+# Top level modules:
+# 	ALU_32bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/ALU_control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_control
+# 
+# Top level modules:
+# 	ALU_control
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/Control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Control
+# 
+# Top level modules:
+# 	Control
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/Instruction_Memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Instruction_Memory
+# 
+# Top level modules:
+# 	Instruction_Memory
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/Registers.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Registers
+# 
+# Top level modules:
+# 	Registers
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/Data_Memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Data_Memory
+# 
+# Top level modules:
+# 	Data_Memory
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/171044002/source {C:/altera/13.1/workspace/171044002/source/mips32.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips32
+# 
+# Top level modules:
+# 	mips32
+# 
+# ** Error: (vish-19) Failed to access library 'C:\altera\13.1\modelsim_ase\win32aloem/../altera/vhdl/altera_mf' at "C:\altera\13.1\modelsim_ase\win32aloem/../altera/vhdl/altera_mf".
+# No such file or directory. (errno = ENOENT)
+vlog -reportprogress 300 -work work C:/altera/13.1/workspace/171044002/source/mips32_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips32_testbench
+# 
+# Top level modules:
+# 	mips32_testbench
+vsim work.mips32_testbench
+# vsim work.mips32_testbench 
+# Loading work.mips32_testbench
+# Loading work.mips32
+# Loading work.Instruction_Memory
+# Loading work.Control
+# Loading work.mux_2x1_5bit
+# Loading work.mux_2x1_1bit
+# Loading work.mux_2x1_32bit
+# Loading work.mux_2x1_16bit
+# Loading work.mux_2x1_8bit
+# Loading work.mux_2x1_4bit
+# Loading work.mux_2x1_2bit
+# Loading work.sign_extender_16_to_32
+# Loading work.zero_extender_16_to_32
+# Loading work.Registers
+# Loading work.ALU_control
+# Loading work.ALU_32bit
+# Loading work.ALU_1bit
+# Loading work.ALU_1bit_MSB
+# Loading work.adder_32bit
+# Loading work.adder_16bit
+# Loading work.adder_8bit
+# Loading work.adder_4bit
+# Loading work.adder_2bit
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.left_shifter_2bit
+# Loading work.Data_Memory
+# Loading work.comparator_32bit
+step -current
+# pc= 00000000000000000000000000000000
+# pc= 00000000000000000000000000000100
+# pc= 00000000000000000000000000001000
+# pc= 00000000000000000000000000001100
+# pc= 00000000000000000000000000010000
+# pc= 00000000000000000000000000011100
+# pc= 00000000000000000000000000101000
+# pc= 00000000000000000000000000110100
+# pc= 00000000000000000000000001000000
+# pc= 00000000000000000000000001001100
+# pc= 00000000000000000000000001011000
+# pc= 00000000000000000000000001100100
+# pc= 00000000000000000000000001101000
+# pc= 00000000000000000000000001110100
+# pc= 00000000000000000000000001111000
+# pc= 00000000000000000000000001111100
+# pc= 00000000000000000000000010000000
+# pc= 00000000000000000000000010000100
+# pc= 00000000000000000000000010001000
+# pc= 00000000000000000000000010001100
+# pc= 00000000000000000000000010010000
+# pc= 00000000000000000000000010010100
+# pc= 00000000000000000000000010011000
+# pc= 00000000000000000000000010011100
+# pc= 00000000000000000000000010100000
+# pc= 00000000000000000000000010100100
+# pc= 00000000000000000000000010101000
+# pc= 00000000000000000000000010101100
+# pc= 00000000000000000000000010110000
+# Break in Module mips32_testbench at C:/altera/13.1/workspace/171044002/source/mips32_testbench.v line 21
