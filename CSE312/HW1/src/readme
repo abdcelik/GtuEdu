@@ -1,0 +1,16 @@
+Compiled Shell.c from Shell.asm using the MIPS compiler. Shell.asm extra additions: 
+
+".data" was added
+".text" was added
+".globl main" was added
+".ascii" was rewrited ".asciiz"
+
+Type respectively
+	./spim
+	load "Shell.asm"
+	run
+
+Then type process name without .asm extension
+	~ Factorize
+	~ ShowPrimes
+	~ BubbleSort

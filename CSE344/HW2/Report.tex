@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\title{CSE344 - HW2 Report}
+\author{Abdullah Çelik}
+\date{March 2021}
+
+\begin{document}
+\maketitle
+
+\section{Overview}
+\begin{itemize}
+    \item The most important point of the assignment was that the parent and the children communicate and divide the work into parts. I was not supposed to create zombie processes while doing this. After the children are created with fork (), they are assigned to read and write from the file. Each child locks the file first and unlocks after the job is done. In this way, there is no confusion in file operations. The child whose job is finished becomes sigsuspend. The reason for this was that when the finished child parenta sent a signal, the signals were overlapping and causing problems. Instead, the parent sends a signal to each of them and asks if they've finished their work. Then the parent is sigsuspend waiting for an answer from the child. After the child answers, it is child sigsuspend again and the parent does its first thing. After that, they send a signal to the children again, and the children do other things and terminate them. After collecting the parent children, the program is terminated by doing the remaining work.
+    \item After the children calculate for the lines, they will write the calculated value at the end of the lines. If the new data was written directly, the new data would be overwritten and data loss would occur. For this reason, before the new data was written, the old data was shifted to make space for the new data, and the new data was written to the file.
+    \item Lagrange algorithm is taken "https://www.codesansar.com/numerical-methods/lagrange-interpolation-method-using-c-programming.htm".
+    \item Coefficient algorithm is taken "https://stackoverflow.com/questions/9860937/how-to-calculate-coefficients-of-polynomial-using-lagrange-interpolation/61265513\#61265513"
+\end{itemize}
+
+\newpage
+
+\section{Error Handling}
+
+\begin{itemize}
+\item CTRL + C
+\newline
+Description: The case where the user presses CTRL and C combination.
+\newline
+Action: Program gives all resources to memory and terminates itself.
+
+\item The number of the arguments
+\newline
+Description: The case where the number of arguments is greater than 2.
+\newline
+Action: Prints useful error message and terminates itself.
+
+\item Syscalls and library functions
+\newline
+Description: The case where syscalls and library functions used.
+\newline
+Action: Program checks errors. Then if error occurs, prints useful error message and terminates itself.
+\newline
+
+\end{itemize}
+
+\section{Compile and Run}
+
+\begin{itemize}
+    \item make $\rightarrow$ Compiles the whole program
+    \newline
+    Type make in the file contains the Makefile
+    \item make clean $\rightarrow$ Cleans all objects files
+\end{itemize}
+
+\end{document}
