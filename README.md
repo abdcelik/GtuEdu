@@ -12,6 +12,8 @@ This repository contains my all assignments and laboratory assignments at my Geb
 | [CSE 234](#CSE234) | Logic Circuits And Design Lab |
 | [CSE 331](#CSE331) | Computer Organizations |
 | [CSE 341](#CSE341) | Programming Languages |
+| [CSE 312](#CSE312) | Operating Systems |
+| [CSE 344](#CSE344) | System Programming |
 
 ## CSE102
 ### Purpose of the course
@@ -67,3 +69,15 @@ This repository contains my all assignments and laboratory assignments at my Geb
 &nbsp;&nbsp;&nbsp;&nbsp;Teach the basics of programming languages and the differences between different programming languages.
 ### Courses
 - [2020 Fall](https://github.com/abdcelik/GTU/tree/master/CSE341/2020_Fall)
+
+## CSE312
+### Purpose of the course
+&nbsp;&nbsp;&nbsp;&nbsp;This course covers these topics; Introduction to Operating Systems, Virtual memory, paging, File Systems, Introduction to Operating Systems, Processes, batch jobs, Security.
+### Courses
+- [2021 Spring](https://github.com/abdcelik/GTU/tree/master/CSE312)
+
+## CSE344
+### Purpose of the course
+&nbsp;&nbsp;&nbsp;&nbsp;This course covers these topics; Program systems at under graduate level, Implement and follow up multi threaded computer programs, Grasp the fundemental aspects of system programming in POSIX based systems.
+### Courses
+- [2021 Spring](https://github.com/abdcelik/GTU/tree/master/CSE344)
