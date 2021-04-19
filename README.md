@@ -14,6 +14,7 @@ This repository contains my all assignments and laboratory assignments at my Geb
 | [CSE 341](#CSE341) | Programming Languages |
 | [CSE 312](#CSE312) | Operating Systems |
 | [CSE 344](#CSE344) | System Programming |
+| [CSE 351](#CSE351) | Signals and Systems |
 
 ## CSE102
 ### Purpose of the course
@@ -81,3 +82,9 @@ This repository contains my all assignments and laboratory assignments at my Geb
 &nbsp;&nbsp;&nbsp;&nbsp;This course covers these topics; Program systems at under graduate level, Implement and follow up multi threaded computer programs, Grasp the fundemental aspects of system programming in POSIX based systems.
 ### Courses
 - [2021 Spring](https://github.com/abdcelik/GTU/tree/master/CSE344)
+
+## CSE351
+### Purpose of the course
+&nbsp;&nbsp;&nbsp;&nbsp;This course cover these topics; Distinguish and classify different signals and systems, Choose the most appropriate transforms such Laplace transform and Z-transform for the analysis of given system according to the methodology of discrete-time system analysis, Solve the problems related continuous-time signal analysis using Fourier series and transformation.
+### Courses
+- [2021 Spring](https://github.com/abdcelik/GTU/tree/master/CSE351)
