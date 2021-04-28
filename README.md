@@ -15,6 +15,7 @@ This repository contains my all assignments and laboratory assignments at my Geb
 | [CSE 312](#CSE312) | Operating Systems |
 | [CSE 344](#CSE344) | System Programming |
 | [CSE 351](#CSE351) | Signals and Systems |
+| [MATH 118](#MATH118) | Probability and Statistics |
 
 ## CSE102
 ### Purpose of the course
@@ -88,3 +89,9 @@ This repository contains my all assignments and laboratory assignments at my Geb
 &nbsp;&nbsp;&nbsp;&nbsp;This course cover these topics; Distinguish and classify different signals and systems, Choose the most appropriate transforms such Laplace transform and Z-transform for the analysis of given system according to the methodology of discrete-time system analysis, Solve the problems related continuous-time signal analysis using Fourier series and transformation.
 ### Courses
 - [2021 Spring](https://github.com/abdcelik/GTU/tree/master/CSE351)
+
+## MATH118
+### Purpose of the course
+&nbsp;&nbsp;&nbsp;&nbsp;Basic concepts and axioms, sets, counting, Permutation and combination, Probability, Conditional probability, independence, Random variables, Continuous and discrete random variables, Probability distribution functions of random variables, Gauss, Binomial distributions take place in the scope of this course.
+### Courses
+- [2021 Spring](https://github.com/abdcelik/GTU/tree/master/MATH118)
