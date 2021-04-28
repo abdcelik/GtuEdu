@@ -1,0 +1,168 @@
+\documentclass[a4 paper]{article}
+\usepackage[inner=2.0cm,outer=2.0cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage[ruled]{algorithm2e}
+\usepackage[rgb]{xcolor}
+\usepackage{verbatim}
+\usepackage{subcaption}
+\usepackage{amsgen,amsmath,amstext,amsbsy,amsopn,tikz,amssymb,tkz-linknodes}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true, urlcolor=blue,  linkcolor=blue, citecolor=blue]{hyperref}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{rotating}
+\usepackage{booktabs}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+
+\newcommand{\homework}[6]{
+   \pagestyle{myheadings}
+   \thispagestyle{plain}
+   \newpage
+   \setcounter{page}{1}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{\vspace{2mm}
+    \hbox to 6.28in { {\bf MATH 118:~Statistics and Probability \hfill {\small (#2)}} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\Large \hfill #1  \hfill} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\it Instructor: {\rm #3} \hfill Name: {\rm #5} \hfill Student Id: {\rm #6}} \hfill}
+       \hbox to 6.28in { {\it Assistant: #4  \hfill #6}}
+      \vspace{2mm}}
+   }
+   \end{center}
+   \markboth{#5 -- #1}{#5 -- #1}
+   \vspace*{4mm}
+}
+
+\newcommand{\problem}[2]{~\\\fbox{\textbf{Problem #1}}\hfill (#2 points)\newline\newline}
+\newcommand{\subproblem}[1]{~\newline\textbf{(#1)}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\Hy}{\mathcal{H}}
+\newcommand{\VS}{\textrm{VS}}
+\newcommand{\solution}{~\newline\textbf{\textit{(Solution)}} }
+
+\newcommand{\bbF}{\mathbb{F}}
+\newcommand{\bbX}{\mathbb{X}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bepsilon}{\boldsymbol{\epsilon}}
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\0}{\mathbf{0}}
+
+
+\begin{document}
+\homework{Homework \#1}{Due: 26/04/21}{Dr. Zafeirakis Zafeirakopoulos}{Gizem S\"ung\"u}{}{}
+\textbf{Course Policy}: Read all the instructions below carefully before you start working on the assignment, and before you make a submission.
+\begin{itemize}
+\item It is not a group homework. Do not share your answers to anyone in any circumstance. Any cheating means at least -100 for both sides. 
+\item Do not take any information from the Internet.
+\item No late homework will be accepted. 
+\item For any questions about the homework, come to my office hour.
+\item After the office hour, no questions about the homework by email will be responded.
+\item Submit your homework (both your latex and pdf files in a zip file) into the course page of Moodle.
+\item Save your latex, pdf and zip files as "Name\_Surname\_StudentId".\{tex, pdf, zip\}.
+\item The deadline of the homework is 22/04/21 23:55.
+\end{itemize}
+
+\problem{1}{100}
+
+Homework 1 considers a Covid-19 dataset which is published on \href{https://github.com/owid/covid-19-data/tree/master/public/data}{Github}. Please download any document type that you prefer of the dataset from the links which are shown in Figure \ref{fig:pic}.
+\begin{figure}[htb]
+	
+	\includegraphics[scale=0.5]{pic.png}
+	\caption{The complete dataset links}
+	\label{fig:pic}
+\end{figure}
+The dataset is updated daily and includes data on confirmed cases, deaths, hospitalizations, testing, and vaccinations as well as other variables of potential interest. The data set has the following basic columns:
+\begin{itemize}
+	\item iso\_code: Short name of the country
+	\item continent: The continent where the country exists
+	\item location: The country name
+	\item date: The date when the data about various variables are taken. 
+\end{itemize}
+
+You are responsible to implement a program which reads the given dataset from the file and computes the data for the following questions. Any programming language that you prefer will be accepted. Putting comments on your functions that you implement is must. Each question must be appended to a file which is called "output\{.csv, .txt\}". The file contains the first 18 questions listed below. The 18th question will be written in this document.
+
+\begin{itemize}
+	\item[1. ] How many countries the dataset has?
+	\item[2. ] When is the earliest date data are taken for a country? Which country is it?
+	\item[3. ] How many cases are confirmed for each country so far? Print pairwise results of country and total cases.
+	\item[4. ] How many deaths are confirmed for each country so far? Print pairwise results of country and total deaths.
+	\item[5. ] What are the average, minimum, maximum and variation values of the reproduction rates for each country?
+	\begin{table}[ht]
+		\caption{The format of the output for the questions 5, 6, 7, 8, 9, 10, 12, 13.} % title of Table
+		\centering  % used for centering table
+		\begin{tabular}{c c c c c}% centered columns (4 columns)
+			\hline\hline       %inserts double horizontal lines
+			Country & minimum & maximum & average & variation \\ 
+			[0.5ex]% inserts table 
+			%heading
+			\hline      % inserts single horizontal line
+			value & value & value & value & value \\% inserting body of the table
+			
+			\hline %inserts single line
+		\end{tabular}\label{table:nonlin}% is used to refer this table in the text
+	\end{table}
+	\item[6. ] What are the average, minimum, maximum and variation values of the icu\_patients (intensive care unit patients) for each country?
+	\item[7. ] What are the average, minimum, maximum and variation values of the hosp\_patients (hospital patients) for each country?
+	\item[8. ] What are the average, minimum, maximum and variation values of the weekly icu (intensive care unit) admissions for each country?
+	\item[9. ] What are the average, minimum, maximum and variation values of the weekly hospital admissions for each country?
+	\item[10. ] What are the average, minimum, maximum and variation values of new tests per day for each country?
+	\item[11. ] How many tests are conducted in total for each country so far?
+	\item[12. ] What are the average, minimum, maximum and variation values of the positive rates of the tests for each country?
+	\item[13. ] What are the average, minimum, maximum and variation values of the tests per case for each country?
+	\item[14. ] How many people are vaccinated by at least one dose in each country?
+	\item[15. ] How many people are vaccinated fully in each country?
+	\item[16. ] How many vaccinations are administered in each country so far?
+	\item[17. ] List information about population, median age, \# of people aged 65 older, \# of people aged 70 older, economic performance, death rates due to heart disease, diabetes prevalence, \# of female smokers, \# of	male smokers, 	handwashing facilities,	hospital beds per thousand people,	life expectancy and	human development index.
+		\begin{table}[ht]
+		\caption{The format of the output for the question 17} % title of Table
+		\centering  % used for centering table
+		\begin{tabular}{c c c c}% centered columns (4 columns)
+			\hline\hline       %inserts double horizontal lines
+			Country & population & median age & \# of people aged 65 older \\ 
+			[0.5ex]% inserts table 
+			%heading
+			\hline      % inserts single horizontal line
+			value & value & value & value \\% inserting body of the table
+			
+			\hline %inserts single line
+		\end{tabular}\label{table:nonlin}% is used to refer this table in the text
+	\end{table}
+	\item[18. ] Summarize all the results that you obtain by the first 17 questions (except question 2). 
+	\begin{table}[ht]
+		\caption{The format of the output for the question 18} % title of Table
+		\centering  % used for centering table
+		\begin{tabular}{c c c c c c c}% centered columns (4 columns)
+			\hline\hline       %inserts double horizontal lines
+			Country & q\#3 & q\#4 & q\#5\_min &  q\#5\_max & q\#5\_avg &  q\#5\_var  \\ 
+			[0.5ex]% inserts table 
+			%heading
+			\hline      % inserts single horizontal line
+			 value & value & value & value & value & value & value\\% inserting body of the table
+
+			\hline %inserts single line
+		\end{tabular}\label{table:nonlin}% is used to refer this table in the text
+	\end{table}
+	\item[19. ] Comment the results based on your observations. Write your opinions about the reasons of increasing infection rates by giving examples from the results. Feel free to explain any situation that you observe. More observations more opportunities will bring you for the second homework. 
+	\solution (Write your observations here.)
+	
+	
+	
+\end{itemize}
+
+
+\end{document} 
+
+
