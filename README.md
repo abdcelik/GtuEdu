@@ -6,13 +6,14 @@ This repository contains my all assignments and laboratory assignments at my Geb
 | [CSE 102](#CSE102) | Computer Programming |
 | [CSE 108](#CSE108) | Computer Programming Laboratory |
 | [CSE 211](#CSE211) | Discrete Mathematics |
-| [CSE 241](#CSE241) | Object Oriented Programming |
 | [CSE 222](#CSE222) | Data Structures and Algorithms |
+| [CSE 231](#CSE231) | Circuits And Electronics |
 | [CSE 232](#CSE232) | Logic Circuits And Design |
 | [CSE 234](#CSE234) | Logic Circuits And Design Lab |
+| [CSE 241](#CSE241) | Object Oriented Programming |
+| [CSE 312](#CSE312) | Operating Systems |
 | [CSE 331](#CSE331) | Computer Organizations |
 | [CSE 341](#CSE341) | Programming Languages |
-| [CSE 312](#CSE312) | Operating Systems |
 | [CSE 344](#CSE344) | System Programming |
 | [CSE 351](#CSE351) | Signals and Systems |
 | [MATH 118](#MATH118) | Probability and Statistics |
@@ -36,17 +37,17 @@ This repository contains my all assignments and laboratory assignments at my Geb
 ### Courses
 - [2020 Fall](https://github.com/abdcelik/GTU/tree/master/CSE211/2020_Fall)
 
-## CSE241
-### Purpose of the course
-&nbsp;&nbsp;&nbsp;&nbsp;Teach the main the principles of object oriented programming. Introduce the object oriented syntax.
-### Courses
-- [2019 Fall](https://github.com/abdcelik/GTU/tree/master/CSE241/2019_Fall)
-
 ## CSE222
 ### Purpose of the course
 &nbsp;&nbsp;&nbsp;&nbsp;To help students to know some basic data structures and algorithms which are to be used as tools in designing solutions to problems; and become familiar with the specification, usage, implementation and analysis of these data structures and algorithms.
 ### Courses
 - [2020 Spring](https://github.com/abdcelik/GTU/tree/master/CSE222)
+
+## CSE231
+### Purpose of the course
+&nbsp;&nbsp;&nbsp;&nbsp;Topics of this lesson are; Introducing the elements of electric and electronic circuits understand the basic working principles of circuits, OPAMP, Analog-Digital Converter Circuits, Digital-Analog Converter Circuits, Transistor dc and ac model, FET, MOSFET, Amplifier,
+### Courses
+- [2021 Fall](https://github.com/abdcelik/GTU/tree/master/CSE231/2021_Fall)
 
 ## CSE232
 ### Purpose of the course
@@ -60,6 +61,18 @@ This repository contains my all assignments and laboratory assignments at my Geb
 ### Courses
 - [2020 Spring](https://github.com/abdcelik/GTU/tree/master/CSE234)
 
+## CSE241
+### Purpose of the course
+&nbsp;&nbsp;&nbsp;&nbsp;Teach the main the principles of object oriented programming. Introduce the object oriented syntax.
+### Courses
+- [2019 Fall](https://github.com/abdcelik/GTU/tree/master/CSE241/2019_Fall)
+
+## CSE312
+### Purpose of the course
+&nbsp;&nbsp;&nbsp;&nbsp;This course covers these topics; Introduction to Operating Systems, Virtual memory, paging, File Systems, Introduction to Operating Systems, Processes, batch jobs, Security.
+### Courses
+- [2021 Spring](https://github.com/abdcelik/GTU/tree/master/CSE312)
+
 ## CSE331
 ### Purpose of the course
 &nbsp;&nbsp;&nbsp;&nbsp;Teach assembly instruction set architecture and programming in assembly. Make able to implement computer arithmetic in hardware and design and analyze ALUs. To teach MIPS single cycle, multi cycle and pipelined datapath and control unit architectures enough to rebuild and modify them. To teach cache architecture, virtual memory method.
@@ -71,12 +84,6 @@ This repository contains my all assignments and laboratory assignments at my Geb
 &nbsp;&nbsp;&nbsp;&nbsp;Teach the basics of programming languages and the differences between different programming languages.
 ### Courses
 - [2020 Fall](https://github.com/abdcelik/GTU/tree/master/CSE341/2020_Fall)
-
-## CSE312
-### Purpose of the course
-&nbsp;&nbsp;&nbsp;&nbsp;This course covers these topics; Introduction to Operating Systems, Virtual memory, paging, File Systems, Introduction to Operating Systems, Processes, batch jobs, Security.
-### Courses
-- [2021 Spring](https://github.com/abdcelik/GTU/tree/master/CSE312)
 
 ## CSE344
 ### Purpose of the course
