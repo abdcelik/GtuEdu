@@ -71,7 +71,8 @@ This repository contains my all assignments and laboratory assignments at my Geb
 ### Purpose of the course
 &nbsp;&nbsp;&nbsp;&nbsp;This course covers these topics; Introduction to Operating Systems, Virtual memory, paging, File Systems, Introduction to Operating Systems, Processes, batch jobs, Security.
 ### Courses
-- [2021 Spring](https://github.com/abdcelik/GTU/tree/master/CSE312)
+- [2020-2021 Spring](https://github.com/abdcelik/GTU/tree/master/CSE312/2020-2021_Spring)
+- [2021-2022 Spring](https://github.com/abdcelik/GTU/tree/master/CSE312/2021-2022_Spring)
 
 ## CSE331
 ### Purpose of the course
@@ -89,7 +90,8 @@ This repository contains my all assignments and laboratory assignments at my Geb
 ### Purpose of the course
 &nbsp;&nbsp;&nbsp;&nbsp;This course covers these topics; Program systems at under graduate level, Implement and follow up multi threaded computer programs, Grasp the fundemental aspects of system programming in POSIX based systems.
 ### Courses
-- [2021 Spring](https://github.com/abdcelik/GTU/tree/master/CSE344)
+- [2020-2021 Spring](https://github.com/abdcelik/GTU/tree/master/CSE344/2020-2021_Spring)
+- [2021-2022 Spring](https://github.com/abdcelik/GTU/tree/master/CSE344/2021-2022_Spring)
 
 ## CSE351
 ### Purpose of the course
