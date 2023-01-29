@@ -12,6 +12,7 @@ This repository contains my all assignments and laboratory assignments at my Geb
 | [CSE 234](#CSE234) | Logic Circuits And Design Lab |
 | [CSE 241](#CSE241) | Object Oriented Programming |
 | [CSE 312](#CSE312) | Operating Systems |
+| [CSE 321](#CSE321) | Introduction To Algorithm Design |
 | [CSE 331](#CSE331) | Computer Organizations |
 | [CSE 341](#CSE341) | Programming Languages |
 | [CSE 344](#CSE344) | System Programming |
@@ -73,6 +74,12 @@ This repository contains my all assignments and laboratory assignments at my Geb
 ### Courses
 - [2020-2021 Spring](https://github.com/abdcelik/GTU/tree/master/CSE312/2020-2021_Spring)
 - [2021-2022 Spring](https://github.com/abdcelik/GTU/tree/master/CSE312/2021-2022_Spring)
+
+## CSE321
+### Purpose of the course
+&nbsp;&nbsp;&nbsp;&nbsp;Topics of this course are; basic algorithms, algorithm analysis and algorithm design techniques.
+### Courses
+- [2022-2023 Fall](https://github.com/abdcelik/GTU/tree/master/CSE321/2022-2023_Fall)
 
 ## CSE331
 ### Purpose of the course
