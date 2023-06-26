@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Form</title>
+</head>
+
+<body>
+    <a href="{{ url_for('home') }}"> Home </a>
+  
+    <h2>Login Page</h2>
+    <br>
+    <form id="login" method="POST" action="{{ url_for('get_example_form') }}">
+        <label>
+            <b>User Name</b>
+        </label>
+
+        <input type="text" name="Uname" placeholder="Username">
+        <br>
+        <br>
+
+        <label>
+            <b>Password</b>
+        </label>
+
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+        <br>
+        <br>
+
+        <input type="submit" name="log" id="log" value="Log In Here">
+        <br>
+        <br>
+    </form>
+    <a href="{{ url_for('get_views') }}">get_views</a>
+</body>
+
+</html>

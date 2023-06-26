@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE414</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        
+        a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .repository-content {
+            max-width: 90%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .repository-content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .repository-content ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .repository-content ul li {
+            margin-bottom: 5px;
+        }
+
+        .nav {
+            background-color: #333;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav li {
+            margin: 0 10px;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><a href="#">CSE414</a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            {% if is_loged_in %}
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            {% else %}
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+            {% endif %}
+        </ul>
+    </div>
+
+    {% if is_loged_in %}
+        <div class="repository-content">
+            <h2>
+                <a href="{{ url_for('logout') }}">Logout</a>
+            </h2>
+        </div>
+    {% else %}
+        <div class="repository-content">
+            <h2>
+                <a href="{{ url_for('login') }}">Login</a>
+            </h2>
+        </div>
+
+        <div class="repository-content">
+            <h2>
+                <a href="{{ url_for('register') }}">Register</a>
+            </h2>
+            <ul>
+                <li>Trigger: A record will be added to activities table</li>
+                <li>Trigger: Company mail will be set by using first name and last name</li>
+            </ul>
+        </div>
+    {% endif %}
+
+    <div class="repository-content">
+        <h2>
+            <a href="{{ url_for('get_tables') }}">Show All Tables</a>
+        </h2>
+    </div>
+
+    <div class="repository-content">
+        <h2>
+            <a href="{{ url_for('get_views') }}">Show All Views</a>
+        </h2>
+    </div>
+
+    <div class="repository-content">
+        <h2>
+            <a href="{{ url_for('get_example_form') }}">Example Form</a>
+        </h2>
+    </div>
+
+    <div class="repository-content">
+        <h2>
+            <a href="{{ url_for('add_task') }}">Add Task</a>
+        </h2>
+        <ul>
+            <li>Trigger: A record will be added to activities table</li>
+        </ul>
+    </div>
+
+    <div class="repository-content">
+        <h2>
+            <a href="{{ url_for('delete_user') }}">Delete User</a>
+        </h2>
+    </div>
+
+    <div class="repository-content">
+        <h2>
+            <a href="{{ url_for('update_password') }}">Update Password</a>
+        </h2>
+    </div>
+
+    <div class="repository-content">
+        <h2>
+            <a href="{{ url_for('add_project') }}">Add Project</a>
+        </h2>
+        <ul>
+            <li>Trigger: checks whether start_date is less than end_date, otherwise it swaps</li>
+        </ul>
+    </div>
+
+    <div class="repository-content">
+        <h2>
+            <a href="{{ url_for('show_activities') }}">Show Activities</a>
+        </h2>
+        <ul>
+            <li>Trigger: When a record is added to activities, the record of the at_created attribute will be set to now()</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>abdullah.celik2017@gtu.edu.tr - 171044002</p>
+        <br>
+        <p>CSE 414 Semester Project</p>
+    </div>
+</body>
+</html>

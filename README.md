@@ -17,6 +17,10 @@ This repository contains my all assignments and laboratory assignments at my Geb
 | [CSE 341](#CSE341) | Programming Languages |
 | [CSE 344](#CSE344) | System Programming |
 | [CSE 351](#CSE351) | Signals and Systems |
+| [CSE 414](#CSE414) | Databases |
+| [CSE 456](#CSE456) | Human Computer Interaction |
+| [CSE 470](#CSE470) | Cryptography and Computer Security |
+| [CSE 473](#CSE473) | Network and Information Security |
 | [MATH 118](#MATH118) | Probability and Statistics |
 
 ## CSE102
@@ -74,6 +78,7 @@ This repository contains my all assignments and laboratory assignments at my Geb
 ### Courses
 - [2020-2021 Spring](https://github.com/abdcelik/GTU/tree/master/CSE312/2020-2021_Spring)
 - [2021-2022 Spring](https://github.com/abdcelik/GTU/tree/master/CSE312/2021-2022_Spring)
+- [2022-2023 Spring](https://github.com/abdcelik/GTU/tree/master/CSE312/2022-2023_Spring)
 
 ## CSE321
 ### Purpose of the course
@@ -105,6 +110,30 @@ This repository contains my all assignments and laboratory assignments at my Geb
 &nbsp;&nbsp;&nbsp;&nbsp;This course cover these topics; Distinguish and classify different signals and systems, Choose the most appropriate transforms such Laplace transform and Z-transform for the analysis of given system according to the methodology of discrete-time system analysis, Solve the problems related continuous-time signal analysis using Fourier series and transformation.
 ### Courses
 - [2021 Spring](https://github.com/abdcelik/GTU/tree/master/CSE351)
+
+## CSE414
+### Purpose of the course
+&nbsp;&nbsp;&nbsp;&nbsp;To empower students with ability to study fundamentals of database systems and from these fundamentals, ability to design and operate modern databases.
+### Courses
+- [2022-2023 Spring](https://github.com/abdcelik/GTU/tree/master/CSE414)
+
+## CSE456
+### Purpose of the course
+&nbsp;&nbsp;&nbsp;&nbsp;To equip students with the necessary knowledge in the field of Human Computer Interaction. The student will be able to pursue researck in the field and have different view of Software Engineering processes of ongoing projects in the industry.
+### Courses
+- [2022-2023 Spring](https://github.com/abdcelik/GTU/tree/master/CSE456)
+
+## CSE470
+### Purpose of the course
+&nbsp;&nbsp;&nbsp;&nbsp;To learn cryptographic topics and to have skill of analysis and designing cyrptographic systems. To have skill of analysis for computer security systems.
+### Courses
+- [2022-2023 Fall](https://github.com/abdcelik/GTU/tree/master/CSE470)
+
+## CSE473
+### Purpose of the course
+&nbsp;&nbsp;&nbsp;&nbsp;To give information about data and network security systems. To teach the process of security system design and to have the ability of security risk analysis.
+### Courses
+- [2022-2023 Spring](https://github.com/abdcelik/GTU/tree/master/CSE473)
 
 ## MATH118
 ### Purpose of the course
