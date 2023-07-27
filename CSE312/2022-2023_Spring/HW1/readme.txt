@@ -1,3 +1,5 @@
+Homework Grade: 50
+
 In the folder where the makefile is located, open terminal.
     Command is 'make run microkernel=obj/KERNEL.o'
 
